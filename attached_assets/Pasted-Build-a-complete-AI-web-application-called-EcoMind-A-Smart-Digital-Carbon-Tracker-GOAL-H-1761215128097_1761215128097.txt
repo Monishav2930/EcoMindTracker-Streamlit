@@ -1,0 +1,75 @@
+Build a complete AI web application called "EcoMind: A Smart Digital Carbon Tracker".
+
+🎯 GOAL:
+Help users track, predict, and reduce their digital carbon footprint through AI, data visualization, and eco-recommendations.
+
+🧩 CORE FEATURES:
+1. **User Dashboard**
+   - Show current CO₂ emissions from digital activities (emails, video calls, streaming, and cloud storage).
+   - Display an eco-meter called "Digital Green Score" to show how eco-friendly the user’s behavior is.
+   - Include interactive charts showing daily, weekly, and monthly CO₂ trends.
+
+2. **AI Prediction System**
+   - Predict future digital carbon emissions using a regression model (trained from example dataset).
+   - Accept inputs like daily streaming time, emails sent, and device usage hours.
+   - Output: predicted CO₂ footprint in grams or kilograms.
+
+3. **Recommendation Engine**
+   - Suggest eco-friendly actions (e.g., reduce video resolution, close idle tabs, schedule email batches).
+   - Show 3 daily “eco tips” personalized to user data.
+
+4. **Gamification**
+   - Award badges (Bronze, Silver, Gold, Platinum) based on reduced footprint.
+   - Add progress bar toward “Next Eco Level”.
+
+5. **Voice Assistant**
+   - Add a voice reminder using `speech_recognition` and `pyttsx3`.
+   - Example: “EcoMind says: Remember to close unused browser tabs!”
+
+6. **Data Visualization**
+   - Use Plotly or Matplotlib to create interactive graphs.
+   - Show comparison of user footprint vs average global digital footprint.
+
+7. **Authentication (Optional)**
+   - Simple login/signup page using Supabase or local JSON storage.
+
+8. **Architecture**
+   - Backend: Python
+   - Frontend: Streamlit
+   - ML model: scikit-learn (linear regression or random forest)
+   - Deployment: Streamlit Cloud (free)
+
+🪄 INTERFACE DESIGN:
+- Dark theme with eco-green and black/yellow color scheme.
+- Title section with animated leaf or globe icon.
+- Tabs: Dashboard | Predictions | Recommendations | Profile.
+
+📁 FILE STRUCTURE:
+EcoMind/
+├── app.py
+├── model/
+│   └── carbon_predictor.pkl
+├── data/
+│   └── user_logs.csv
+├── utils/
+│   └── recommender.py
+├── requirements.txt
+└── README.md
+
+📦 requirements.txt:
+streamlit
+plotly
+pandas
+numpy
+scikit-learn
+speechrecognition
+pyttsx3
+supabase
+matplotlib
+
+💡 TASK:
+Generate all files, build a working Streamlit app, and provide a live preview link.
+The app should let users enter their daily activity data, predict emissions using AI, and display results with charts and tips.
+
+Name the app: EcoMind 🌱
+Tagline: "Track Smarter. Go Greener."
